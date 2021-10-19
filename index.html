@@ -8,10 +8,32 @@
 </head>
 <body>
     <form>
-        <div>
+        <div class="group">
             <label for="name">Name:</label>
-            <input id="name" type="text" name="name" />
-          </div>
+            <div class="item">
+                <input id="name" type="text" name="name" />
+            </div>
+        </div>
+        <div class="group">
+            <label for="email">Email:</label>
+            <div class="item">
+                <input id="email" type="text" name="email" />
+            </div>
+        </div>
+        <div>
+            <label for="form-message">Your message:</label>
+            <div class="item">
+                <textarea
+                      id="form-message"
+                      name="message"
+                      autofocus="on"
+                      maxlength="200"
+            ></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
     </form>
 </body>
 </html>
